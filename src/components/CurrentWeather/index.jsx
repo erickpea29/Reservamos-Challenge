@@ -103,7 +103,7 @@ const CurrentWeather = ({ data }) => {
 		)
 	} else {
 		return (
-			<div>
+			<div className='icon'>
 				<FiSun size={70} />
 			</div>
 		)

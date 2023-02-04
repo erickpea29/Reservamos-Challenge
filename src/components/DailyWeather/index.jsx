@@ -29,21 +29,21 @@ const DailyWeather = ({ data }) => {
 	let day = weekday[d.getDay()]
 
 	const icon = [
-		{ name: 'clear sky', icon: <FiSun size={70} /> },
-		{ name: 'few clouds', icon: <CiCloudSun size={70} /> },
-		{ name: 'scattered clouds', icon: <AiOutlineCloud size={70} /> },
-		{ name: 'overcast clouds', icon: <BsClouds size={70} /> },
-		{ name: 'broken clouds', icon: <BsClouds size={70} /> },
-		{ name: 'shower rain', icon: <BsCloudDrizzle size={70} /> },
-		{ name: 'rain', icon: <BsCloudRainHeavy size={70} /> },
-		{ name: 'thunderstorm', icon: <IoIosThunderstorm size={70} /> },
-		{ name: 'snow', icon: <BsSnow size={70} /> },
-		{ name: 'light snow', icon: <BsSnow size={70} /> },
-		{ name: 'rain and snow,', icon: <BsSnow size={70} /> },
-		{ name: 'mist', icon: <WiDust size={70} /> },
-		{ name: 'fog', icon: <WiDust size={70} /> },
-		{ name: 'moderate rain', icon: <BsCloudDrizzle size={70} /> },
-		{ name: 'light rain', icon: <IoIosThunderstorm size={70} /> },
+		{ name: 'clear sky', icon: <FiSun size={50} /> },
+		{ name: 'few clouds', icon: <CiCloudSun size={50} /> },
+		{ name: 'scattered clouds', icon: <AiOutlineCloud size={50} /> },
+		{ name: 'overcast clouds', icon: <BsClouds size={50} /> },
+		{ name: 'broken clouds', icon: <BsClouds size={50} /> },
+		{ name: 'shower rain', icon: <BsCloudDrizzle size={50} /> },
+		{ name: 'rain', icon: <BsCloudRainHeavy size={50} /> },
+		{ name: 'thunderstorm', icon: <IoIosThunderstorm size={50} /> },
+		{ name: 'snow', icon: <BsSnow size={50} /> },
+		{ name: 'light snow', icon: <BsSnow size={50} /> },
+		{ name: 'rain and snow,', icon: <BsSnow size={50} /> },
+		{ name: 'mist', icon: <WiDust size={50} /> },
+		{ name: 'fog', icon: <WiDust size={50} /> },
+		{ name: 'moderate rain', icon: <BsCloudDrizzle size={50} /> },
+		{ name: 'light rain', icon: <IoIosThunderstorm size={50} /> },
 	]
 
 	return (
@@ -57,11 +57,19 @@ const DailyWeather = ({ data }) => {
 								style={{ width: '85%', maxWidth: 300, margin: '0 15px' }}
 							>
 								<div
-									style={{ display: 'flex', height: 20, alignItems: 'center' }}
+									style={{ display: 'flex', height: 30, alignItems: 'center' }}
 								>
-									{icon.map((dat) => {
-										if (dat.name === item.weather[0].description) {
-											return dat.icon
+									<Separator.Root
+										className='SeparatorRoot'
+										decorative
+										orientation='vertical'
+										style={{
+											margin: '0 30px  ',
+										}}
+									/>
+									{icon.map((items) => {
+										if (items.name === item.weather[0].description) {
+											return items.icon
 										}
 									})}
 									<Separator.Root
@@ -70,11 +78,6 @@ const DailyWeather = ({ data }) => {
 										orientation='vertical'
 										style={{ margin: '0 15px' }}
 									/>
-									<div
-										style={{ width: '100%', maxWidth: 300, margin: '0 15px' }}
-									>
-										<p>{day}</p>
-									</div>
 								</div>
 								<br />
 								<Separator.Root

@@ -25,8 +25,12 @@ const WeatherModal = () => {
 
 				setWeatherData({ ...weatherResponse })
 			})
+		} else {
+			setWeatherData(null)
 		}
 	}
+
+	console.log(weatherData)
 
 	return (
 		<>
@@ -40,7 +44,6 @@ const WeatherModal = () => {
 			</WeatherContainer>
 			<br />
 			{weatherData && <DailyWeather data={weatherData} />}
-			{!weatherData && <div>ola</div>}
 		</>
 	)
 }
