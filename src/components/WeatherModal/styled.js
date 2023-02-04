@@ -11,7 +11,8 @@ export const WeatherContainer = styled.div`
 	background-image: linear-gradient(
 		to right,
 		rgba(102, 186, 91, 1),
-		rgba(102, 186, 91, 0.7)
+		rgba(102, 186, 91, 0.6),
+		rgba(102, 186, 91, 0.5)
 	);
 	padding: 40px 30px;
 	border-radius: 20px;

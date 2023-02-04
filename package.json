@@ -12,6 +12,7 @@
 		"lint": "eslint --ignore-pattern 'cypress/*' --ignore-path .gitignore . --max-warnings 1"
 	},
 	"dependencies": {
+		"@radix-ui/react-alert-dialog": "1.0.2",
 		"@radix-ui/react-label": "2.0.0",
 		"@radix-ui/react-separator": "1.0.1",
 		"formik": "^2.2.9",
