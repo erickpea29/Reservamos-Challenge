@@ -17,6 +17,8 @@ const CurrentWeather = ({ data }) => {
 
 	let now = today.toLocaleTimeString('en-US')
 
+	console.log('a')
+
 	const weekday = [
 		'Sunday',
 		'Monday',
