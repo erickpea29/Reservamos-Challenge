@@ -18,14 +18,14 @@ const Sidebar = ({ isOpen, toggle }) => {
 				<SidebarWrapper>
 					<SidebarMenu>
 						<SidebarLink
-							href='http://www.google.com'
+							href='https://github.com/erickpea29/Reservamos-Challenge.git'
 							target='_blank'
 							onClick={toggle}
 						>
 							Github
 						</SidebarLink>
 						<SidebarLink
-							href='http://www.google.com'
+							href='https://www.figma.com/file/5MUMNLKe0dLGgN4I73OnYz/Reservamos-Challenge?node-id=0%3A1&t=MsaPg5H0rzUCjJml-1'
 							target='_blank'
 							onClick={toggle}
 						>

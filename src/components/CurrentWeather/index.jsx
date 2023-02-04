@@ -40,6 +40,9 @@ const CurrentWeather = ({ data }) => {
 		{ name: 'thunderstorm', icon: <IoIosThunderstorm size={70} /> },
 		{ name: 'snow options', icon: <BsSnow size={70} /> },
 		{ name: 'mist', icon: <WiDust size={70} /> },
+		{ name: 'fog', icon: <WiDust size={70} /> },
+		{ name: 'moderate rain', icon: <BsCloudDrizzle size={70} /> },
+		{ name: 'light rain', icon: <IoIosThunderstorm size={70} /> },
 	]
 
 	const capitalized = data?.current.weather[0].description.replace(
