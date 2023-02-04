@@ -33,6 +33,7 @@ const CurrentWeather = ({ data }) => {
 	const icon = [
 		{ name: 'clear sky', icon: <FiSun size={70} /> },
 		{ name: 'few clouds', icon: <CiCloudSun size={70} /> },
+		{ name: 'overcast clouds', icon: <BsClouds size={70} /> },
 		{ name: 'scattered clouds', icon: <AiOutlineCloud size={70} /> },
 		{ name: 'broken clouds', icon: <BsClouds size={70} /> },
 		{ name: 'shower rain', icon: <BsCloudDrizzle size={70} /> },
@@ -40,9 +41,11 @@ const CurrentWeather = ({ data }) => {
 		{ name: 'thunderstorm', icon: <IoIosThunderstorm size={70} /> },
 		{ name: 'snow options', icon: <BsSnow size={70} /> },
 		{ name: 'mist', icon: <WiDust size={70} /> },
+		{ name: 'rain and snow,', icon: <BsSnow size={70} /> },
 		{ name: 'fog', icon: <WiDust size={70} /> },
 		{ name: 'moderate rain', icon: <BsCloudDrizzle size={70} /> },
 		{ name: 'light rain', icon: <IoIosThunderstorm size={70} /> },
+		{ name: 'light snow', icon: <BsSnow size={70} /> },
 	]
 
 	const capitalized = data?.current.weather[0].description.replace(
