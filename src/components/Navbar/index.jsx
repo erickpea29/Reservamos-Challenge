@@ -15,14 +15,18 @@ const Navbar = ({ toggle }) => {
 			<Nav>
 				<NavbarContainer>
 					<NavLogo>
-						<img src='src\assets\logo.png'></img>
+						<img src='../../../public/static/img/logo.png'></img>
 					</NavLogo>
 					<MobileIcon onClick={toggle}>
 						<FaBars />
 					</MobileIcon>
 					<NavMenu style={{ fontSize: '1.2rem', fontWeight: '520' }}>
-						<NavLinks href='wwww.google.com'>Github</NavLinks>
-						<NavLinks href='wwww.google.com'>Figma</NavLinks>
+						<NavLinks href='http://www.google.com' target='_blank'>
+							Github
+						</NavLinks>
+						<NavLinks href='http://www.google.com' target='_blank'>
+							Figma
+						</NavLinks>
 					</NavMenu>
 				</NavbarContainer>
 			</Nav>

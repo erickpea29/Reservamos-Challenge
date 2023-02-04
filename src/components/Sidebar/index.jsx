@@ -17,10 +17,18 @@ const Sidebar = ({ isOpen, toggle }) => {
 				</Icon>
 				<SidebarWrapper>
 					<SidebarMenu>
-						<SidebarLink href='www.google.com' onClick={toggle}>
+						<SidebarLink
+							href='http://www.google.com'
+							target='_blank'
+							onClick={toggle}
+						>
 							Github
 						</SidebarLink>
-						<SidebarLink href='www.google.com' onClick={toggle}>
+						<SidebarLink
+							href='http://www.google.com'
+							target='_blank'
+							onClick={toggle}
+						>
 							Figma
 						</SidebarLink>
 					</SidebarMenu>
