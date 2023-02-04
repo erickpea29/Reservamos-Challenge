@@ -15,7 +15,7 @@ const Navbar = ({ toggle }) => {
 			<Nav>
 				<NavbarContainer>
 					<NavLogo>
-						<img src='../../../public/static/img/logo.png'></img>
+						<img src='/logos.png'></img>
 					</NavLogo>
 					<MobileIcon onClick={toggle}>
 						<FaBars />
