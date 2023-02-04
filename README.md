@@ -10,7 +10,7 @@ npm install
 - Start development server
 
 ```bash
-npm start
+npm run dev
 ```
 
 > Runs the app in development mode.
