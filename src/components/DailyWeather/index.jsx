@@ -64,7 +64,7 @@ const DailyWeather = ({ data }) => {
 										decorative
 										orientation='vertical'
 										style={{
-											margin: '0 30px  ',
+											margin: '0 30px ',
 										}}
 									/>
 									{icon.map((items) => {
